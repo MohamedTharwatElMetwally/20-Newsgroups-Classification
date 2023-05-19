@@ -81,3 +81,8 @@
 .cool_link:hover {
   text-decoration: underline;
 }
+
+.cool_image {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
