@@ -75,6 +75,28 @@
                             <h1>20 News Groups Classification</h1>    
                             <p>Dataset:&nbsp;<a href="http://qwone.com/~jason/20Newsgroups/" target="_blank" class="cool_link">The 20 Newsgroups data set</a></p>
                             <hr>
+
+                            <h1>The team</h1>
+
+                            <img class="cool_image" src="static/images/amr.jpeg" alt="Amr Wael" width="19.8%" title="Amr Wael">
+                            <img class="cool_image" src="static/images/tharwat.jpeg" alt="Mohamed Tharwat" width="19.8%" title="Mohamed Tharwat">
+                            <img class="cool_image" src="static/images/sara.jpeg" alt="Sara Mohamed" width="19.8%" title="Sara Mohamed">
+                            <img class="cool_image" src="static/images/abdelhamid.jpeg" alt="Mohamed Mahmoud" width="19.8%" title="Mohamed Mahmoud">
+                            <img class="cool_image" src="static/images/islam.jpeg" alt="Islam Saeed" width="19.8%" title="Islam Saeed">
+
+                            <br>
+                            <br>
+                            <br>
+
+                            <p style="font-size: x-large;">
+                                Classification of 20 news groups using Google's BERT model.
+                                BERT is a 12 layer deep neural network model trained to understand langauge by using self-supervised training.
+                                Once trained, BERT architecture offers sentence representations and word level representations as well.
+                                BERT is a language representation model which learns to compute contextual word representations,
+                                and also offers sentence representations expliciltly.
+                            </p>
+
+                            <hr>
                             <H2>What exactly is this</H2>
                             <p>
                                 The 20 Newsgroups data set is a collection of approximately 20,000
@@ -157,6 +179,12 @@
             });
         });
 
+        window.onload = function() {
+            var images = document.getElementsByClassName('cool_image');
+            for (var i = 0; i < images.length; i++) {
+                images[i].style.opacity = 1;
+            }
+        }
     </script>
 </body>
 
