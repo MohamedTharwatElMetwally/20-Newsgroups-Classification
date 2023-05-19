@@ -1,0 +1,214 @@
+<html>
+<head>
+    <title>flask demo</title> 
+    <link rel="stylesheet" href="/static/style.css" /> 
+    
+    <title>{% block title %}{% endblock %} FastAPI Starter</title>
+    <link rel="icon" href="/static/images/favicon.ico'" sizes="32x32" />
+
+    <!-- Bootstrap 5 CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- Custom CSS -->
+    <link href="/static/css/style3.css" rel="stylesheet">
+    <link href="/static/css/mystyle.css" rel="stylesheet">
+
+    <!-- Scrollbar Custom CSS -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Font Awesome JS -->
+    <script src="https://kit.fontawesome.com/543c4560e5.js" crossorigin="anonymous"></script>
+    <style>
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+/* Display the columns below each other instead of side by side on small screens */
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+/* Add some shadows to create a card effect */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Some left and right padding inside the container */
+.container {
+  padding: 0 16px;
+}
+
+/* Clear floats */
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+    </style>
+</head>
+<body>
+
+    <div class="wrapper">
+        <!-- Page Content  -->
+        <div id="content">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+            
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item {{'active' if active_page == 'unsplash' }}">
+                                <a class="nav-link" href="/">Home</a>
+                            </li>
+                            <li class="nav-item {{'active' if active_page == 'twoforms' }}">
+                                <a class="nav-link" href="/twoforms">Predict</a>
+                            </li>
+                            <li class="nav-item {{'active' if active_page == 'accordion' }}">
+                                <a class="nav-link" href="/about">About</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </nav>
+
+            <h1>Meet the Team</h1><br> 
+            <div class="row">
+                <div class="column">
+                    <div class="card">
+                    <div class="container">
+                        <h2>Jane Doe</h2>
+                        <p class="title">CEO &amp; Founder</p>
+                        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+                        <p>mhmedmhmod184@gmail.com</p>
+                        <p><button class="button" >
+                            <a href="https://github.com/MAbdelhamid2001">Github</a>
+                        </button></p></div>
+                    </div>
+                </div>
+                
+                <div class="column">
+                    <div class="card">
+                    <div class="container">
+                        <h2>Mike Ross</h2>
+                        <p class="title">Art Director</p>
+                        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+                        <p>mhmedmhmod184@gmail.com</p>
+                        <p><button class="button" >
+                            <a href="https://github.com/MAbdelhamid2001">Github</a>
+                        </button></p></div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="card">
+                        <div class="container">
+                        <h2>Mike Ross</h2>
+                        <p class="title">Art Director</p>
+                        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+                        <p>mhmedmhmod184@gmail.com</p>
+                        <p><button class="button" >
+                            <a href="https://github.com/MAbdelhamid2001">Github</a>
+                        </button></p></div>
+                    </div>
+                    </div>
+                    <div class="column">
+                    <div class="card">
+                        <div class="container">
+                        <h2>Mike Ross</h2>
+                        <p class="title">Art Director</p>
+                        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+                        <p>mhmedmhmod184@gmail.com</p>
+                        <p><button class="button" >
+                            <a href="https://github.com/MAbdelhamid2001">Github</a>
+                        </button></p> </div>
+                    </div>
+                    </div>
+                
+                <div class="column">
+                    <div class="card">
+                    <div class="container">
+                        <h2>John Doe</h2>
+                        <p class="title">Designer</p>
+                        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+                        <p>mhmedmhmod184@gmail.com</p>
+                        <p><button class="button" >
+                            <a href="https://github.com/MAbdelhamid2001">Github</a>
+                        </button></p>
+                    </div>
+                    </div>
+                </div>
+                </div>
+
+                </div>
+
+        </div>
+    </div>
+    <div class="overlay"></div>
+
+    <script src="/static/serve.js" charset="utf-8"></script>
+
+    
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
+        integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+        crossorigin="anonymous"></script>
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <!-- jQuery Custom Scroller CDN -->
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#sidebar").mCustomScrollbar({
+                theme: "minimal"
+            });
+
+            $('#dismiss, .overlay').on('click', function () {
+                $('#sidebar').removeClass('active');
+                $('.overlay').removeClass('active');
+            });
+
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').addClass('active');
+                $('.overlay').addClass('active');
+                $('.collapse.in').toggleClass('in');
+                $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+            });
+        });
+
+    </script>
+</body>
+
+</html>
