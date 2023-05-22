@@ -1,6 +1,6 @@
 <html>
 <head>
-    <title>20 News Groups Classification</title> 
+    <title>flask demo</title> 
     <link rel="stylesheet" href="/static/style.css" /> 
     
     <title>{% block title %}{% endblock %} FastAPI Starter</title>
@@ -50,7 +50,7 @@
                 </div>
             </nav>
 
-                                <!-- content -->
+                  <!-- content -->
                                 <!-- <main class="content">
                                     <div class="content_inner">
                                       <h1>The mysterious red button of doom</h1>
@@ -72,74 +72,65 @@
                                   </main> -->
                                 <!-- end content -->
 
-                            <h1>20 News Groups Classification</h1>    
-                            <p>Dataset:&nbsp;<a href="http://qwone.com/~jason/20Newsgroups/" target="_blank" class="cool_link">The 20 Newsgroups data set</a></p>
-                            <hr>
-
-                            <h1>The team</h1>
-
-                            <img class="cool_image" src="static/images/amr.jpeg" alt="Amr Wael" width="19.8%" title="Amr Wael">
-                            <img class="cool_image" src="static/images/tharwat.jpeg" alt="Mohamed Tharwat" width="19.8%" title="Mohamed Tharwat">
-                            <img class="cool_image" src="static/images/sara.jpeg" alt="Sara Mohamed" width="19.8%" title="Sara Mohamed">
-                            <img class="cool_image" src="static/images/abdelhamid.jpeg" alt="Mohamed Mahmoud" width="19.8%" title="Mohamed Mahmoud">
-                            <img class="cool_image" src="static/images/islam.jpeg" alt="Islam Saeed" width="19.8%" title="Islam Saeed">
-
-                            <br>
-                            <br>
-                            <br>
-
-                            <p style="font-size: x-large;">
-                                Classification of 20 news groups using Google's BERT model.
-                                BERT is a 12 layer deep neural network model trained to understand langauge by using self-supervised training.
-                                Once trained, BERT architecture offers sentence representations and word level representations as well.
-                                BERT is a language representation model which learns to compute contextual word representations,
-                                and also offers sentence representations expliciltly.
-                            </p>
-
-                            <hr>
-                            <H2>What exactly is this</H2>
-                            <p>
-                                The 20 Newsgroups data set is a collection of approximately 20,000
-                                newsgroup documents, partitioned (nearly) evenly across 20 different
-                                newsgroups. To the best of my knowledge, it was originally collected
-                                by Ken Lang, probably for his <i><a HREF="lang95.bib" class="cool_link">Newsweeder:
-                                Learning to filter netnews</a></i> paper, though he does not
-                                explicitly mention this collection.  The 20 newsgroups collection has
-                                become a popular data set for experiments in text applications of
-                                machine learning techniques, such as text classification and text
-                                clustering.
-                                
-                                <H2>The data</H2>
-                                
-                                <p>
-                                The data available here are in .tar.gz bundles.  You will need <a
-                                href="http://www.gnu.org/software/tar/tar.html" class="cool_link">tar</a> and <a
-                                href="http://www.gnu.org/software/gzip/gzip.html" class="cool_link">gunzip</a> to open
-                                them.  Each subdirectory in the bundle represents a newsgroup; each
-                                file in a subdirectory is the text of some newsgroup document that was
-                                posted to that newsgroup.
+                                <h1>20 News Groups Classification</h1>    
+                                <p>Dataset:&nbsp;<a href="http://qwone.com/~jason/20Newsgroups/" target="_blank" class="cool_link">The 20 Newsgroups data set</a></p>
+                                <hr>       
+                                <br>
+    
+                                <p style="font-size: x-large;">
+                                    Classification of 20 news groups using Google's BERT model.
+                                    BERT is a 12 layer deep neural network model trained to understand langauge by using self-supervised training.
+                                    Once trained, BERT architecture offers sentence representations and word level representations as well.
+                                    BERT is a language representation model which learns to compute contextual word representations,
+                                    and also offers sentence representations expliciltly.
                                 </p>
-                                
+    
+                                <hr>
+                                <H2>What exactly is this</H2>
                                 <p>
-                                Below are three versions of the data set.  The first ("19997") is the
-                                original, unmodified version.  The second ("bydate") is sorted by date
-                                into training(60%) and test(40%) sets, does not include cross-posts
-                                (duplicates) and does not include newsgroup-identifying headers (Xref,
-                                Newsgroups, Path, Followup-To, Date).  The third ("18828") does not
-                                include cross-posts and includes only the "From" and "Subject"
-                                headers.
-                                </p>
-                                
-                                <ul>
-                                <li> <a href="20news-19997.tar.gz" class="cool_link">20news-19997.tar.gz</a> - Original 20 Newsgroups data set
-                                <li> <a href="20news-bydate.tar.gz" class="cool_link">20news-bydate.tar.gz</a> - 20 Newsgroups sorted by date; duplicates and some headers removed (18846 documents)
-                                <li> <a href="20news-18828.tar.gz" class="cool_link">20news-18828.tar.gz</a> - 20 Newsgroups; duplicates removed, only "From" and "Subject" headers (18828 documents)
-                                </ul>
-                                
-                                <p>I recommend the "bydate" version since cross-experiment comparison is
-                                easier (no randomness in train/test set selection),
-                                newsgroup-identifying information has been removed and it's more
-                                realistic because the train and test sets are separated in time.
+                                    The 20 Newsgroups data set is a collection of approximately 20,000
+                                    newsgroup documents, partitioned (nearly) evenly across 20 different
+                                    newsgroups. To the best of my knowledge, it was originally collected
+                                    by Ken Lang, probably for his <i><a HREF="lang95.bib" class="cool_link">Newsweeder:
+                                    Learning to filter netnews</a></i> paper, though he does not
+                                    explicitly mention this collection.  The 20 newsgroups collection has
+                                    become a popular data set for experiments in text applications of
+                                    machine learning techniques, such as text classification and text
+                                    clustering.
+                                    
+                                    <H2>The data</H2>
+                                    
+                                    <p>
+                                    The data available here are in .tar.gz bundles.  You will need <a
+                                    href="http://www.gnu.org/software/tar/tar.html" class="cool_link">tar</a> and <a
+                                    href="http://www.gnu.org/software/gzip/gzip.html" class="cool_link">gunzip</a> to open
+                                    them.  Each subdirectory in the bundle represents a newsgroup; each
+                                    file in a subdirectory is the text of some newsgroup document that was
+                                    posted to that newsgroup.
+                                    </p>
+                                    
+                                    <p>
+                                    Below are three versions of the data set.  The first ("19997") is the
+                                    original, unmodified version.  The second ("bydate") is sorted by date
+                                    into training(60%) and test(40%) sets, does not include cross-posts
+                                    (duplicates) and does not include newsgroup-identifying headers (Xref,
+                                    Newsgroups, Path, Followup-To, Date).  The third ("18828") does not
+                                    include cross-posts and includes only the "From" and "Subject"
+                                    headers.
+                                    </p>
+                                    
+                                    <ul>
+                                    <li> <a href="20news-19997.tar.gz" class="cool_link">20news-19997.tar.gz</a> - Original 20 Newsgroups data set
+                                    <li> <a href="20news-bydate.tar.gz" class="cool_link">20news-bydate.tar.gz</a> - 20 Newsgroups sorted by date; duplicates and some headers removed (18846 documents)
+                                    <li> <a href="20news-18828.tar.gz" class="cool_link">20news-18828.tar.gz</a> - 20 Newsgroups; duplicates removed, only "From" and "Subject" headers (18828 documents)
+                                    </ul>
+                                    
+                                    <p>I recommend the "bydate" version since cross-experiment comparison is
+                                    easier (no randomness in train/test set selection),
+                                    newsgroup-identifying information has been removed and it's more
+                                    realistic because the train and test sets are separated in time.
+    
+
 
                 </div>
 
@@ -179,12 +170,6 @@
             });
         });
 
-        window.onload = function() {
-            var images = document.getElementsByClassName('cool_image');
-            for (var i = 0; i < images.length; i++) {
-                images[i].style.opacity = 1;
-            }
-        }
     </script>
 </body>
 
